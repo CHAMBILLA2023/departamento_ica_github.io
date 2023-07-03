@@ -14,7 +14,7 @@ var map = L.map('map', {
     subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
   }).addTo(map);
   
-  var farmaciasLayer = L.tileLayer.wms('http://localhost:8080/geoserver/wms', {
+  var farmaciasLayer = L.tileLayer.wms('http://localhost:8080/geoserver/departamento_ica/wms?', {
     layers: 'departamento_ica:Farmacias',
     format: 'image/png',
     transparent: true
