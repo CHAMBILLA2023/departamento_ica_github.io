@@ -50,7 +50,7 @@ var map = L.map('map', {
     transparent: true
   });
   
-  var semaforosLayer = L.tileLayer.wms('http://localhost:8080/geoserver/wms', {
+  var semaforosLayer = L.tileLayer.wms('http://localhost:8080/geoserver/departamento_ica/wms?', {
     layers: 'departamento_ica:semaforos',
     format: 'image/png',
     transparent: true
