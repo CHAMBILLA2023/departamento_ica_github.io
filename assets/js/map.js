@@ -20,25 +20,25 @@ var map = L.map('map', {
     transparent: true
   });
   
-  var bancosLayer = L.tileLayer.wms('http://localhost:8080/geoserver/wms', {
+  var bancosLayer = L.tileLayer.wms('http://localhost:8080/geoserver/wms?', {
     layers: 'departamento_ica:bancos',
     format: 'image/png',
     transparent: true
   });
   
-  var colegiosLayer = L.tileLayer.wms('http://localhost:8080/geoserver/wms', {
+  var colegiosLayer = L.tileLayer.wms('http://localhost:8080/geoserver/wms?', {
     layers: 'departamento_ica:colegios',
     format: 'image/png',
     transparent: true
   });
   
-  var departamentoLayer = L.tileLayer.wms('http://localhost:8080/geoserver/wms', {
+  var departamentoLayer = L.tileLayer.wms('http://localhost:8080/geoserver/wms?', {
     layers: 'departamento_ica:deparamento de ica',
     format: 'image/png',
     transparent: true
   });
   
-  var museosLayer = L.tileLayer.wms('http://localhost:8080/geoserver/wms', {
+  var museosLayer = L.tileLayer.wms('http://localhost:8080/geoserver/wms?', {
     layers: 'departamento_ica:museos',
     format: 'image/png',
     transparent: true
